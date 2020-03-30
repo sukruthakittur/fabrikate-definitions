@@ -1,8 +1,13 @@
 name: "kube-prometheus"
 type: static
 path: "./manifests"
+hooks:
+  before-install:
+    - echo 'installing prometheus-operator'
+  after-install:
+    - echo 'installed prometheus-operator'
 subcomponents:
-  - name: "prometheus"
+  - name: "kube-prometheus"
     # type: helm
     source: "https://github.com/coreos/kube-prometheus"
     method: "git"
