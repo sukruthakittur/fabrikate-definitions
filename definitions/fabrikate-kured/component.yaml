@@ -1,9 +1,0 @@
-name: "kured"
-type: helm
-source: "https://github.com/helm/charts"
-method: "git"
-path: "stable/kured"
-subcomponents:
-  - name: "static"
-    type: static
-    path: "./manifests"

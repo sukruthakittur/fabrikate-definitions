@@ -1,3 +1,0 @@
-name: bookinfo
-type: helm
-path: ./charts/bookinfo
