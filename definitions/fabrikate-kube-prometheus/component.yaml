@@ -3,7 +3,7 @@ type: static
 path: "./manifests"
 subcomponents:
   - name: "prometheus"
-    type: helm
+    # type: helm
     source: "https://github.com/coreos/kube-prometheus"
     method: "git"
     path: "jsonnet/kube-prometheus"
