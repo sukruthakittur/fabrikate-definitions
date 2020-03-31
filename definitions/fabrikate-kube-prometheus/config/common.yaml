@@ -1,7 +1,7 @@
 config:
 subcomponents:
   prometheus:
-    namespace: prometheus
+    namespace: monitoring
     injectNamespace: true
     config:
       adminUser: "ops"
@@ -678,11 +678,11 @@ subcomponents:
                     severity: warning
   prometheus-adapter:
     config:
-      namespace: "prometheus"
+      namespace: "monitoring"
       prometheus:
         url: http://prometheus-server.prometheus.svc.cluster.local
   grafana:
-    namespace: grafana
+    namespace: monitoring
     injectNamespace: true
     config:
       datasources:
