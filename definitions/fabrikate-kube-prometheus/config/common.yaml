@@ -1,6 +1,6 @@
 config:
 subcomponents:
-  prometheus:
+  prometheus-operator:
     namespace: monitoring
     injectNamespace: true
     config:

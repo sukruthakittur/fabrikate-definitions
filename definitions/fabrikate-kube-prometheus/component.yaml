@@ -7,7 +7,7 @@ hooks:
   after-install:
     - echo 'installed prometheus-operator'
 subcomponents:
-  - name: "kube-prometheus"
+  - name: "prometheus-operator"
     type: helm
     source: "https://github.com/helm/charts"
     method: "git"
